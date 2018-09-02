@@ -2,7 +2,7 @@ var game = new Phaser.Game(800, 600, Phaser.AUTO, '');
  
 game.state.add('play', {
     preload: function() {
-        game.load.image('skeleton', 'assets/allacrost_enemy_sprites/skeleton.png');
+        game.load.image('skeleton', 'assets/enemys/Deco_skeleto_sitdown.png');
     },
     create: function() {
         var skeletonSprite = game.add.sprite(450, 290, 'skeleton');
@@ -12,5 +12,5 @@ game.state.add('play', {
         game.debug.text('Adventure Awaits!', 250, 290);
     }
 });
- 
+
 game.state.start('play');
